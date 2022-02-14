@@ -1,6 +1,13 @@
-.pokedex{
-    display:flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+.pokedex {
+	display: flex;
+	padding-top: 70px;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.pokemon-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }

@@ -37,12 +37,12 @@ export const PokemonList = () => {
 	}
 	if (loadign) return <div>Loading...</div>;
 	return (
-		<>
+		<div className='pokedex'>
 			<Pagination
 				goToPreviousPage={previousPageUrl ? goToPreviousPage : null}
 				goToNextpage={nextPageUrl ? goToNextpage : null}
 			/>
-			<ul className='pokedex'>
+			<ul className='pokemon-list'>
 				{pokemonName.map((p) => (
 					<PokemonCard name={p} key={p} />
 				))}
@@ -52,6 +52,6 @@ export const PokemonList = () => {
 				goToPreviousPage={previousPageUrl ? goToPreviousPage : null}
 				goToNextpage={nextPageUrl ? goToNextpage : null}
 			/>
-		</>
+		</div>
 	);
 };
